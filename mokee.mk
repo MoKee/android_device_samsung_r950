@@ -1,5 +1,5 @@
 # Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/cdma.mk)
+$(call inherit-product, vendor/mk/config/cdma.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := r950
@@ -8,15 +8,15 @@ PRODUCT_RELEASE_NAME := r950
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common MK stuff.
+$(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/r950/full_r950.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := r950
-PRODUCT_NAME := cm_r950
+PRODUCT_NAME := mk_r950
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SCH-R950
 PRODUCT_MANUFACTURER := samsung
